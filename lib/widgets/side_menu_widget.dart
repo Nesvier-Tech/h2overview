@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:h2overview/features/auth/screens/onboding/onboding_screen.dart';
 
 import '../const/constant.dart';
 import '../data/side_menu_data.dart';
@@ -41,6 +42,15 @@ class _SideMenuWidgetState extends State<SideMenuWidget> {
       child: InkWell(
         onTap: () => setState(() {
           selectedIndex = index;
+
+          if (index == 5) {
+            print('Sign out');
+          }
+
+          // Navigate to a new screen.
+          Navigator.of(context).push(
+            MaterialPageRoute(builder: (context) => const OnbodingScreen()),
+          );
         }),
         child: Row(
           children: [

@@ -16,9 +16,9 @@ class MyApp extends StatelessWidget {
       title: 'Dashboard UI',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        scaffoldBackgroundColor: backgroundColor,
-        brightness: Brightness.dark,
-      ),
+          // scaffoldBackgroundColor: backgroundColor,
+          // brightness: Brightness.dark,
+          ),
       home: const MainScreen(),
     );
   }
